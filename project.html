@@ -1,0 +1,321 @@
+<!DOCTYPE HTML>
+<!--
+	Halcyonic by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Projects and Skills</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<script type="text/x-mathjax-config">
+			MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+		</script>
+		<script type="text/javascript"
+			src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+		</script>
+	</head>
+
+    <!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-FVK66GWTRQ"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-FVK66GWTRQ');
+	</script>
+
+	<body class="subpage">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+
+								<!-- Logo -->
+								    <h1><a href="http://www.ustc.edu.cn"><img id="logo" src="images/ustc_logo.svg" style="width:100%" alt="" title=""></a></h1>
+
+								<!-- Nav -->
+									<nav id="nav">
+										<a href="index.html">Homepage</a>
+										<a href="education.html">Education and Honors</a>
+										<a href="project.html">Projects and Skills</a>
+									</nav>
+
+							</div>
+						</div>
+					</div>
+				</section>
+
+			<!-- Content -->
+				<section id="content">
+					<div class="container">
+						<div class="row">
+							<div class="col-3 col-12-medium">
+
+								<!-- Sidebar -->
+									<section>
+										<header>
+											<h2>Skills</h2>
+										</header>
+										<ul class="link-list">
+											<h3>Programming</h3>
+											<li>Python: proficient, have coursework and project e.g., QPI computation practices</li>
+											<li>C/C++: proficient, have over 5 coursework practices using distinctive algorithms</li>
+											<li>Mathematica: intermediate, mainly solve physics problems or draw diagrams</li>
+											<li>Matlab: intermediate, mainly use is similar to Mathematica</li>
+											<li>Java: intermediate, have experience about working with and modifying Dr. Daniel Walkup's Java Packages</li>
+											<li>Verilog and Assembly: intermediate, have experience in computer organization and design</li>
+										</ul>
+										<ul class="link-list">
+											<h3>Software</h3>
+											<li>COMSOL Multiphysics: have experience in 3D eletromagnetic field modeling in realistic problems</li>
+											<li>Solidworks: proficient in 3D model construction</li>
+										</ul>
+									</section>
+
+							</div>
+							<div class="col-9 col-12-medium imp-medium">
+
+								<!-- Main Content -->
+									<section>
+										<header>
+											<h2>Research Projects</h2>
+										</header>
+										<p>
+											<h3>Building Machine Learning Based Platform for Searching Exfoliated 2D Flakes</h3>
+											Currently, the primary method for acquiring high-quality 2D materials for device construction involves the mechanical exfoliation of bulk crystals, a 
+											process that typically consumes significant time due to the need for manual selection and marking by humans. However, thin-layer 2D materials exhibit 
+											sensitivity to the absorption and refraction of light, resulting in characteristic colors corresponding to their thickness, which serves as a 
+											criterion for human judgment. Therefore, there is significant potential in developing computer vision and machine learning algorithms for the 
+											automated identification of 2D flakes by machines. Various previous attempts have been made using neural networks and k-means clustering techniques with
+											different complexity and efficiency. To suit our current instrumentation, we have implemented the control and communication between the microscope, camera, and 
+											computer system, while simultaneously running an identification algorithm primarily improved from the method detailed in the paper <a href="
+											https://doi.org/10.48550/arXiv.2306.14845">arxiv: 2306.14845</a> using scikit-learn clustering techniques. Furthermore, we have designed a user-friendly graphical user 
+											interface (GUI) for convenient operation and have successfully applied multi-chip scanning within an impressively short time.
+											<video controls src="images/autoFlake.mp4" style="width:100%"></video>
+											Here is the latest <a href="source/documentation.pdf">documentation</a>, <a href="source/v11.zip">codes</a> and <a href="https://gitee.com/symmetry/flake-search">repository</a>.
+											<embed id="pdfPlayer" src="source/documentation.pdf" type="application/pdf" width="100%" height="600" >
+											<h3></h3>
+											This work is supervised by <a href="https://sites.google.com/site/makshangroup/">Prof. Kin Fai Mak</a> and <a href="https://sites.google.com/site/makshangroup/">Prof. Jie Shan</a> (Cornell)
+										</p>
+										<p>
+											<h3>Computation of Quasiparticle Interference (QPI) in Kagome Superconductor CsV3Sb5</h3>
+											When quasiparticles scatter between the constant energy contours, they generate standing wave modulation in real space, reflecting band structure.
+											STM could achieve high energy resolution (even higher than ARPES, about microelectronvolts) of these band structures from QPI. Former successful observation
+											has succeeded in BSCCO (<a href="http://dx.doi.org/%2010.1038/nature01496">K. McElroy et al., Nature 422, 592, (2003)</a>) 
+											and FeSe (<a href="https://doi.org/10.1126/science.aal1575">P. O. Sprau et al., Science 357, 75 (2017)</a>) etc.
+											Recently, kagome lattice (AV3Sb5, A = K, Cs, Rb) has attracted much attention. But its superconductivity mechanism remains
+											unsolved and even confusing with distinctive experimental methods. To probe the symmetry of its superconductivity, we attempt to construct model with V atom's \(d_{x^2-y^2}\) orbits in 3 sublattices.
+											With supposed unconventional pairing symmetry (e.g., p, d, f) in nearest neighbor (NN), next nearest neighbor (NNN) and third nearest neighbor (TNN)
+											real space pairing, we simulate the QPI signals respectively with the input tight-binding parameter from <a href="https://doi.org/10.1103/PhysRevB.105.L100502">Y. Gu et al, Phys. Rev. B 105, L100502 (2022)</a>,
+										    hoping to inspire further STM experiments. 
+											<img id="" src="images/qpi.png" style="width:100%" alt="" title="">
+											Here is a short self-written introduction of QPI: <a href="source/QPIreview.pdf">article</a>.
+											<h3></h3>
+											This work is supervised by <a href="https://iqm.ustc.edu.cn">Prof. Zhenyu Wang</a> (USTC)
+											in the discussion with <a href="https://sites.google.com/view/lvqm">Prof. Rahul Sharma</a> (IISER, Berhampur, former PhD student of <a href="http://davis-group-quantum-matter-research.ie">Prof. J. C. Seamus Davis</a> in Cornell)
+										</p>
+										<p>
+											<h3>Imaging Momentum-space Cooper Pair Formation and Its Competition with Charge Density Wave Gap in Kagome Superconductor</h3>
+											Abstract: The superconducting ground state of kagome metals AV3Sb5 (where A stands for K, Rb or Cs) develops from an exotic charge density wave (CDW) 
+											state that may break both rotation and time reversal symmetries. However, the specifics of Cooper pairing mechanism, and the nature of coupling 
+											between these two states remains elusive, largely due to the lack of momentum-space (k-space) structure of superconducting energy gap \(\Delta_\mathrm{SC} (k)\). 
+											By implementing Bogoliubov quasiparticle interference (BQPI) imaging, we determine the detailed structure of the multiband energy gaps \(\Delta_\mathrm{SC}^i (k)\) in 
+											the pristine CsV3Sb5. We show that while the energy gap on the Sb p-band is approximately 0.5meV, that on the vanadium \(d_{xy/x^2-y^2}\) orbital is 
+											highly anisotropic but nodeless, with a minimal value of approximately 0.3meV near the M point. Interestingly, a comparison of \(\Delta_\mathrm{SC}^i (k)\) with the 
+											CDW gap \(\Delta_\mathrm{CDW}^i (k)\) obtained by angle-resolved photoemission spectroscopy immediately reveals a direct k-space competition between these two order 
+											parameters, that is, the opening of large (small) CDW gap at a given momentum corresponds to a small (large) superconducting gap. Moreover, when the 
+											long-range CDW order is totally suppressed by replacing vanadium with titanium, we find a nearly isotropic energy gap on the both V and Sb bands. 
+											This quantitative information will be critical in identifying the microscopic pairing mechanism and its interplay with intertwined electronic orders 
+											in this kagome superconductor family.
+											<img id="" src="images/cdwSc.png" style="width:100%" height="" alt="" title="">
+											Preprint at <a href=" https://doi.org/10.5281/zenodo.10211414">Zenodo</a>, under review of <a href="https://link.springer.com/journal/11433">Science China Physics, Mechanics & Astronomy</a>
+											<h3></h3>
+											This work is supervised by <a href="https://iqm.ustc.edu.cn">Prof. Zhenyu Wang</a> (USTC)
+										</p>
+										<p>
+											<h3>Phase Determination from Topographical Evidence in 3D Quantum Spin Hall Insulator \(\alpha\)-Bi4I4</h3>
+											The quantum spin hall insulator (QSHI), also known as a 2D Z2-type topological insulator, has only been verified in a 
+											handful of candidates, such as HgTe quantum wells, bismuthene, stanene, graphene, or TMD devices. 
+											To utilize 1D helical modes in quantum spin hall insulators, given the complexity and 
+											uncertainty of large-scale atomic-thin-layer fabrication, stacking QSHI layers is a desirable path 
+											to realize these robust topological channels in steps. However, they are normally difficult to 
+											preserve due to detrimental interlayer coupling. In this study, we employ a combination of scanning 
+											tunneling microscopy (STM) and first-principles calculations to report the realization and 
+											visualization of robust helical edge modes encircling each layer in a 3D QSHI, \(\alpha\)-Bi4I4. This 
+											material consists of two quantum spin hall layers with the same spin Chern number in one unit cell. 
+											We image the robust helical edge modes encircling each layer along different types of edges, 
+											confirming their topological nature. To determine the phase of Bi4I4, apart from transport 
+											measurements, we conduct atom-resolved detection on the surface, providing topological evidence for 
+											its crystal structure.
+											<img id="" src="images/Bi4I4.png" style="width:100%" height="" alt="" title="">
+											Preprint at <a href=" https://doi.org/10.5281/zenodo.10208230">Zenodo</a>, under review of <a href="https://journals.aps.org/prx/">Physical Review X</a>
+											<h3></h3>
+											This work is supervised by <a href="https://iqm.ustc.edu.cn">Prof. Zhenyu Wang</a> (USTC)
+										</p>
+										<p>
+											<h3>Precise Manipulation of High Numerical Aperture Ball Lens for Enhanced Sptial Optical Imaging of Moire TMD Devices</h3>
+											Optical probe is one of the most spatial sensitive methods for imaging the exciton and band structures of moire sites on twisted TMD devices. However, the resolution is limited by 
+											the size of illuminated optical spots in fridges, e.g., ~1 micro in commercial Attocube. To have more precise imaging, we attempt to deliver ball lens, or solid immersion lens, to enhance 
+											the optical performance. Due to their high refractive index (\(n\)) nature, their numerical aperture, NA~\(\frac{1}{n}\), could be dramatically increased, which is proportional to the spatial 
+											resolution. Besides, the refractive ability to collect light more efficiently (<a href="https://doi.org/10.1038/s41377-020-0284-1">A. Bogucki et al., Light Sci. Appl. 9, 48 (2020)</a>) 
+											and additional magnification ~\(n\) could offer even more benefits. Experimentally, we succeeded in precisely delivering the ball lens to the center of the channels, creating clear imaging of 
+											devices with ~700nm resolution. The robustness has been tested under spectrometers in commercial Montana fridges at 4K. We are pursuing further optical measurements, e.g., full gate-gate mapping, 
+											chemical potential detection, MCD probe etc., for realistic tMoTe2 devices. Combined with confocal microscope or excitonic stimulated emission depletion microscopy 
+											(<a href="https://doi.org/10.1007/978-3-319-22437-4_3">J. Dodgson et al, Super-Resolution Microscopy: SIM, STED and Localization Microscopy. in Advanced Microscopy in Mycology (Springer, 
+											2015)</a>), we hope to push the limit towards super-resolution and single moire site imaging.
+											<img id="" src="images/ballLens.png" style="width:100%" alt="" title="">
+											This work is supervised by <a href="https://sites.google.com/site/makshangroup/">Prof. Kin Fai Mak</a> and <a href="https://sites.google.com/site/makshangroup/">Prof. Jie Shan</a> (Cornell)
+										</p>
+										<p>
+											<h3>Construction of STM-suitable Strain Device for Quantum Materials</h3>
+											Single-axis strain, different from hydrostatic pressure, could modulate lattice constants for quantum materials anisotropically.
+											Traditionally, it is not easy to construct strain device for STM measurement, limited by the size of sample chamber and sensitivity to 
+											electronic noises (i.e., a piezoelectric based strain device is not suitable). To address this problem, we attempt to construct a new category of device, 
+											referring to <a href="https://doi.org/10.1038/s41563-021-01004-4">C Lin, et al., Nat. Mater. 20, 1093 (2021)</a>'s mechanical approach but modulating our device with
+											STM realistic parameters. To visualize the effects of strain, we use strain gauges for measurement. To simulate its effects on real samples,
+											we also select CsV3Sb5 as an example by measuring its transport properties under distinctive strain,
+											e.g., critical temperature and CDW transition temperature and comparing it with <a href="https://nilab.physics.ucla.edu/">Prof. Ni Ni</a> (UCLA)'s
+											results (<a href="https://doi.org/10.1103/PhysRevB.104.144506">T. Qian et al., Phys. Rev. B 104, 144506 (2021)</a>). This project is still ongoing and 
+											we hope to do direct STM observation of single-axis strain modulated quantum materials with the device.
+											<img id="" src="images/strain.png" style="width:100%" height="" alt="" title="">
+											This work is supervised by <a href="https://iqm.ustc.edu.cn">Prof. Zhenyu Wang</a> (USTC).
+										</p>
+										<p>
+											<h3>Exploration of Emerging Quantum Phases through Gate Tuning in Twisted MoTe2 Device</h3>
+											As the first system showing fractional quantum anomalous Hall effect (FQAHE) (ref: <a href="https://doi.org/10.1038/s41586-023-06289-w">J. Cai et al., Nature 
+											622, 63 (2023)</a>, <a href="https://doi.org/10.1038/s41586-023-06452-3">Y. Zeng et al., Nature 622, 69 (2023)</a>, 
+											<a href="https://doi.org/10.1038/s41586-023-06536-0">H. Park et al., Nature 622, 74 (2023)</a>, <a href="https://doi.org/10.1103/PhysRevX.13.031037">F. Xu et al., 
+											Phys. Rev. X 13, 031037 (2023)</a>), tMoTe2 has emerged as one of the most intriguing platforms for the exploration of exotic electron correlations. However, the challenges 
+											associated with creating moire patterns and maintaining good electrical contacts present significant obstacles in producing a multitude of devices. In our pursuit, we aim to draw 
+											insights from the structural configurations in previous results and introduce variations in the twist angles to investigate the emergence of quantum phases across the entire phase 
+											diagram.
+										</p>
+										<p>
+											<h3>Higher Order Modulation for Strain Field Analysis beyond Lawler-Fujita Algorithm</h3>
+											In real STM measurement, some factors, including piezoelectrical effects and thermal drift, could cause complicated but non-physical errors in
+											graphs measured by STM. In these graphs, lattice's periodicity is broken and it is common to see multiple peaks around Bragg points rather than a single peak
+											as usual. To address this problem, M. J. Lawler and K. Fujita et al., (<a href="https://doi.org/10.1038/nature09169">M. J. Lawler et al., Nature 466, 347 (2010)</a>) introduced
+											a former technique in electron microscope here. In short, it subtracts the non-physical long wave signals in k-space and applies compensation from 
+											these signals to the original images. As an advance of it,  <a href="https://www.nist.gov/people/daniel-walkup">Dr. Daniel Walkup</a> (NIST)
+											succeeded in constructing strain field from this process, but that includes too much non-physical noise. <a href="http://capricorn.bc.edu/wp/zeljkoviclab/">Prof. Illija Zeljkovic</a>
+                                            (BC) took an approximation method, simulating background noise as 2nd polynomial form (<a href="https://doi.org/10.1038/s41467-020-20150-y">Z. Ren et al., Nat Commun 12, 10 (2021)</a>).
+                                            To have a deeper research of this problem, we modify Dr. Daniel Walkup's algorithms, correct his errors and add higher order simulation of background noise,
+											doing comparison of their results. Moreover, we also examine the effects of coarsening length scale in Lawler-Fujita algorithm to 
+											find the condition for achieving the best visual effects.
+											<img id="" src="images/strainField.png" style="width:100%" height="" alt="" title="">
+											This work is supervised by <a href="https://iqm.ustc.edu.cn">Prof. Zhenyu Wang</a> (USTC).
+										</p>
+										<p>
+											<h3>Construction of Metal-Semiconductor-Metal Photodetectors</h3>
+                                            Self-driven photodetectors with low dark current is critical for industrial applications, including bioimaging and optical communication. But they
+											have been verified to be hard to achieve in previous experiments with graphene and black phosphorus. Even if they could, some additional complex
+											operation like the construction of heterojunction or electrode fabrication has to be involved. Theoretically, another structure consist of two simple
+											asymmetric P-N junctions is proposed to overcome those challenges. Based on previous results of WSe2 using this technique (<a href="https://doi.org/10.1002/adfm.201802954">C. Zhou et al., Adv. Funct. Mater. 28, 1802954 (2018)</a>), we expand
+											the experimental condition, constructing WSe2 and ReS2 photodectors. Moreover, we add the single-point illuminated light current mapping, having deeper discussion to investigate the
+											cause of light-current response with the structural asymmetry.
+											<img src="images/2d.png" style="width:100%">
+											This work is supervised by <a href="http://staff.ustc.edu.cn/~hlzeng">Prof. Hualing Zeng</a> (USTC)
+										</p>
+										<header>
+											<h2>Course Projects</h2>
+										</header>
+										<p>
+											<h3>Simulation of Apparent Resistivity with Complex Building Structure and Underground Ores</h3>
+											There is a well-known joke in USTC: The reason why students sometimes cannot measure correct gravity constant in Physics Experiment Teaching
+											Center is the gold ore buried underground :D. To solve this long time puzzle, we refer to the apparent resistivity method, which is widely
+											used in geophysics. To be precise, it includes setting several electrodes on the ground surface and getting the measured resistivity from the process.
+											We consider the contribution to the overall apparent resistivity both from the gold ores (which could cause
+											enough deviation to measured gravity constant) and the building of Physics Experiment Teaching Center on the ground. To reduce the overall
+											measurement area and enhance the signal intensity, we suggest a geometrical analysis method and further improvements in equipment selection.
+											<h3>
+												<img src="images/em-fig1.png" style="width:27%"> &emsp; <img src="images/em-fig2.png" style="width:27%">
+												&emsp; <img src="images/em-fig4.gif" style="width:27%"> &emsp; <img src="images/em-fig5.png" style="width:27%"> &emsp; <img src="images/em-fig6.png" style="width:27%">
+												&emsp; <img src="images/em-fig3.gif" style="width:27%">
+											</h3>
+											The full thesis is <a href="source/emThesis.pdf">here</a> (in Chinese).
+											<h3></h3>
+											This work is supervised by <a href="http://staff.ustc.edu.cn/~bjye">Prof. Bangjiao Ye</a> (USTC) and awarded as 1st prize in Electromagnetic Thesis Competition (USTC).
+										</p>
+									</section>
+
+							</div>
+						</div>
+					</div>
+				</section>
+
+			<!-- Footer -->
+			<section id="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-7 col-12-medium">
+
+							<!-- Links -->
+								<section>
+									<h2>Useful Links</h2>
+									<div>
+										<div class="row">
+											<div class="col-5 col-12-small">
+												<ul class="link-list last-child">
+													<li>
+														<a href="https://physics.ustc.edu.cn/main.htm">School of Physical Science, USTC</a>
+													</li>
+													<li><a href="https://www.cond-mat.de/">CMP Sources in Forschungszentrum Jülich</a></li>
+												</ul>
+											</div>
+											<div class="col-7 col-12-small">
+												<ul class="link-list last-child">
+													<li><a href="http://cs.ustc.edu.cn/">School of Computer Science and Technology, USTC</a></li>
+													<li><a href="https://topocondmat.org/">Topology in CMP</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</section>
+
+						</div>
+						<div class="col-5 col-12-medium imp-medium">
+
+							<!-- Blurb -->
+								<section>
+									<h2>Contact Information</h2>
+									<ul class="link-list">
+										<li>
+											Address: Univerisity of Science and Technology, 96 Jinzhai Road, Hefei, Anhui, China
+										</li>
+										<li>
+											Email: <a href="mailto:sym20@mail.ustc.edu.cn">sym20@mail.ustc.edu.cn</a>
+										</li>
+										<li>
+											<img src="/cgi-bin/Count.cgi?df=sym20.dat">
+										</li>
+									</ul>
+								</section>
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Copyright -->
+				<div id="copyright">
+					Copyright &copy; 2022 Yiming Sun. All rights reserved. | Design: <a href="http://html5up.net">HTML5 UP</a>
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
